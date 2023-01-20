@@ -45,6 +45,8 @@ body {
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
   color: gray;
+  font-family: "Karla", sans-serif;
+  text-indent: 0.5rem;
 }
 .input--first {
   margin-right: 0.75rem;
@@ -66,4 +68,10 @@ body {
   justify-content: center;
   width: 80vw;
   border-radius: 5px;
+  cursor: pointer;
+}
+.meme--image {
+  border-radius: 5px;
+  padding: 3rem;
+  width: 100%;
 }
