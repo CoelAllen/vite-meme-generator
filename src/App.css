@@ -75,3 +75,21 @@ body {
   padding: 3rem;
   width: 100%;
 }
+.top-text {
+  position: absolute;
+  top: 1.5rem;
+  color: white;
+  font-size: 2rem;
+}
+.bottom-text {
+  position: absolute;
+  bottom: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  overflow-wrap: normal;
+}
+.img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
