@@ -25,15 +25,17 @@ export default function Meme() {
 
   return (
     <div>
-      <div className="form">
+      <form className="form">
         <div className="meme--inputs">
           <input
             className="input--first"
+            value={meme.topText}
             placeholder="Top text..."
             type="text"
           />
           <input
             className="input--last"
+            value={meme.bottomText}
             placeholder="Bottom text..."
             type="text"
           />
@@ -43,7 +45,7 @@ export default function Meme() {
             Get a new meme image 🖼
           </div>
         </div>
-      </div>
+      </form>
       <img src={meme.memeImage} alt="Meme Image" className="meme--image" />
     </div>
   );
