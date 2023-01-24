@@ -22,16 +22,10 @@ export default function Meme() {
       memeImage: url,
     }));
   }
-  function handleTopChange(event) {
+  function handleChange(event) {
     setMeme((prev) => ({
       ...prev,
-      topText: event?.target.value,
-    }));
-  }
-  function handleBottomChange(event) {
-    setMeme((prev) => ({
-      ...prev,
-      bottomText: event?.target.value,
+      [event.target.name]: event?.target.value,
     }));
   }
 
@@ -41,17 +35,17 @@ export default function Meme() {
         <div className="meme--inputs">
           <input
             className="input--first"
-            value={meme.topText}
-            onChange={handleTopChange}
             placeholder="Top text..."
             type="text"
+            name="topText"
+            onChange={handleChange}
           />
           <input
             className="input--last"
-            value={meme.bottomText}
-            onChange={handleBottomChange}
             placeholder="Bottom text..."
             type="text"
+            name="bottomText"
+            onChange={handleChange}
           />
         </div>
         <div className="meme--button">
