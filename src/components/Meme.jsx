@@ -56,10 +56,10 @@ export default function Meme() {
           </div>
         </div>
       </form>
-      <div className="img-wrapper">
+      <div className="img--wrapper">
         <img src={meme.memeImage} alt="Meme Image" className="meme--image" />
-        <p className="top-text">{meme.topText}</p>
-        <p className="bottom-text">{meme.bottomText}</p>
+        <p className="meme--text top">{meme.topText}</p>
+        <p className="meme--text bottom">{meme.bottomText}</p>
       </div>
     </div>
   );
