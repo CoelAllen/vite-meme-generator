@@ -39,6 +39,7 @@ export default function Meme() {
             type="text"
             name="topText"
             onChange={handleChange}
+            value={meme.topText}
           />
           <input
             className="input--last"
@@ -46,6 +47,7 @@ export default function Meme() {
             type="text"
             name="bottomText"
             onChange={handleChange}
+            value={meme.bottomText}
           />
         </div>
         <div className="meme--button">
